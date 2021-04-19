@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat IO</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-lumen.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-primary">
+    <div class="container">
+        <div class="abs-center">
+            <div class="card border-dark caja-mensajes">
+                <div class="card-body text-secondary">
+                    <h4 class="card-title">
+                        <a href="#" class="d-block">Persona</a>
+                    </h4>
+                    <hr>
+                    <div class="container-message position-relative" id="container-message">
+                        <!--Chats-->
+                    </div>
+                </div>
+
+                <div class="estado-mensajes" id="estado-mensajes">
+                     
+                </div>
+
+                <div class="card-footer bg-transparent border-secondary">
+                    <div class="mensajes-footer-container">
+                        <div class="row" style="width:100%">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control d-block" id="nuevoMensaje" placeholder="Mensaje">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <button class="btn btn-primary mb-3 btn-block" id="btnEnviarMensaje">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+
+</html>
